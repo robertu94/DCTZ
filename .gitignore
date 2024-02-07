@@ -55,3 +55,7 @@ dkms.conf
 *.log
 *.z
 *.r
+
+#binaries
+dctz-ec-test
+dctz-qt-test

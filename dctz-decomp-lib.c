@@ -214,7 +214,7 @@ int dctz_decompress(t_var *var_z, t_var *var_r)
 
   inflate(&infstream[0], Z_NO_FLUSH);
   inflateEnd(&infstream[0]);
-#ifndef SIZE_DEBUG
+#ifdef SIZE_DEBUG
   printf("uncompressed bin_index size is: %lu\n", infstream[0].total_out);
 #endif
 
@@ -244,7 +244,7 @@ int dctz_decompress(t_var *var_z, t_var *var_r)
 
   inflate(&infstream[1], Z_NO_FLUSH);
   inflateEnd(&infstream[1]);
-#ifndef SIZE_DEBUG
+#ifdef SIZE_DEBUG
   printf("uncompressed DC size is: %lu\n", infstream[1].total_out);
 #endif
 
@@ -274,7 +274,7 @@ int dctz_decompress(t_var *var_z, t_var *var_r)
 
   inflate(&infstream[2], Z_NO_FLUSH);
   inflateEnd(&infstream[2]);
-#ifndef DEBUG
+#ifdef DEBUG
   printf("uncompressed AC_exact size is: %lu\n", infstream[2].total_out);
 #endif
 

@@ -432,9 +432,9 @@ memset(bin_index, 0, sizeof(t_bin_id)*N);
     }
   }
   
-  //#ifdef DEBUG
+  #ifdef DEBUG
   printf("total AC_exact_count = %d\n", tot_AC_exact_count);
-  //#endif
+  #endif
 
 #ifdef TIME_DEBUG
   gettimeofday(&end_t, NULL);
@@ -703,7 +703,7 @@ memset(bin_index, 0, sizeof(t_bin_id)*N);
   free(qtable);
 #endif
   
-#ifndef SIZE_DEBUG
+#ifdef SIZE_DEBUG
   printf("outSize = %zu\n", *outSize);
 #endif
 

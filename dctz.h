@@ -20,10 +20,10 @@
 #include "zlib.h"
 #include "dct.h"
 
-#define DCTZ_VERSION "0.2.1"
+#define DCTZ_VERSION "0.2.2"
 #define DCTZ_VERSION_MAJOR 0
 #define DCTZ_VERSION_MINOR 2
-#define DCTZ_VERSION_PATCH 1
+#define DCTZ_VERSION_PATCH 2
 
 #define BLK_SZ 64
 #define BRSF 1.0 /* bin range scaling factor: 1 means no scaling */
